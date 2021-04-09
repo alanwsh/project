@@ -23,8 +23,9 @@ class Product extends CI_Controller{
     }
 
     public function edit_product($id){
-        //$this->session->set_userdata('page','edit');
-        $this->load->view('edit_view');
+        $this->session->set_userdata('page','edit');
+        redirect('users');
+        //$this->load->view('edit_view');
     }
     public function insert_product(){
         //$this->session->unset_userdata('temp_img_path');
@@ -80,5 +81,9 @@ class Product extends CI_Controller{
         }
         redirect('users');
 
+    }
+
+    public function update_product(){
+        echo $this->session->userdata('product_id');
     }
 }

@@ -45,7 +45,7 @@
     <div class = "col-1">
         <h1><?php echo $this->session->userdata('product_name');?></h1>
         <?php
-            echo "<img id = 'p_img' src = 'image/product/".$this->session->userdata('product_image')."'</img>";
+            echo "<img id = 'p_img' src = 'image/product/".$this->session->userdata('product_image')."'></img>";
         ?>
     </div>
     <div class = "col-2">

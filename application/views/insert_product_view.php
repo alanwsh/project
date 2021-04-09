@@ -128,7 +128,7 @@
         <div class = "row1">
             <div class = "col-1">
             <?php //echo form_open('product/insert_product');?>
-                <h1>Insert Product</h1>
+                <h1>Update Product</h1>
                     <form method = "post" action = "<?=base_url('product/insert_product')?>" enctype = "multipart/form-data" novalidate>
                     <div class = "input-file">
                         <label for = "product_image">

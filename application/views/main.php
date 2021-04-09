@@ -167,6 +167,10 @@ else{
          echo "<div class = 'home'>";
          $this->load->view('insert_product_view');
          //$this->session->unset_userdata('page');
+     }
+     elseif($this->session->userdata('page')=='edit'){
+        echo "<div class = 'home'>";
+        $this->load->view('edit_view');
      }  
      echo "<div class = 'footer'>";
      $this->load->view('footer');
